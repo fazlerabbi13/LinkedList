@@ -78,42 +78,42 @@ public class SinglyLinkedList{
 
 //    delete at particular index element
 
-//    public int deleteAtParticularIndex(int index){
-//        if(index==0){
-//            return deleteFirst();
-//        }
-//        if(index==size-1){
-//            return deleteLast();
-//        }
-//
-//        Node previous = get(index-1);
-//        int value = previous.next.value;
-//
-//        previous.next=previous.next.next;
-//
-//        return value;
-//
-//    }
+    public int deleteAtParticularIndex(int index){
+        if(index==0){
+            return deleteFirst();
+        }
+        if(index==size-1){
+            return deleteLast();
+        }
+
+        Node previous = get(index-1);
+        int value = previous.next.value;
+
+        previous.next=previous.next.next;
+
+        return value;
+
+    }
 
 //    delete last element from linked list
-//    public int deleteLast(){
-//        if(size<=1){
-//            return deleteFirst();
-//        }
-//        Node secondLast = get(size-2);
-//        int value = tail.value;
-//        tail=secondLast;
-//        tail.next=null;
-//        return  value;
-//    }
-//
-//    public Node get(int index){
-//        Node node = head;
-//        for(int i =0;i<index; i++){
-//            node = node.next;
-//        }
-//        return node;
-//    }
+    public int deleteLast(){
+        if(size<=1){
+            return deleteFirst();
+        }
+        Node secondLast = get(size-2);
+        int value = tail.value;
+        tail=secondLast;
+        tail.next=null;
+        return  value;
+    }
+
+    public Node get(int index){
+        Node node = head;
+        for(int i =0;i<index; i++){
+            node = node.next;
+        }
+        return node;
+    }
 
     public Node find(int value){
         Node node = head;

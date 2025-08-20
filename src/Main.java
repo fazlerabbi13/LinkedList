@@ -16,14 +16,14 @@ public class Main {
         list.insertAtParticularIndex(100,3);
 
         System.out.println(list.deleteFirst());
-//
-//        list.display();
-//
-//        System.out.println(list.deleteLast());
-//
-//        list.display();
-//
-//        System.out.println(list.deleteAtParticularIndex(2));
+
+        list.display();
+
+        System.out.println(list.deleteLast());
+
+       list.display();
+
+      System.out.println(list.deleteAtParticularIndex(2));
 
         list.display();
     }
