@@ -66,15 +66,15 @@ public class SinglyLinkedList{
     }
 
 //    delete first Node
-//    public int deleteFirst(){
-//        int value= head.value;
-//        head=head.next;
-//        if(head==null){
-//            tail=null;
-//        }
-//        size--;
-//        return value;
-//    }
+    public int deleteFirst(){
+        int value= head.value;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        size--;
+        return value;
+    }
 
 //    delete at particular index element
 
