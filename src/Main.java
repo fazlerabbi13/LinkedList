@@ -12,8 +12,8 @@ public class Main {
         list.insertFirst(9);
 
         list.insertLast(99);
-//
-//        list.insertAtParticularIndex(100,3);
+
+        list.insertAtParticularIndex(100,3);
 //
 //        System.out.println(list.deleteFirst());
 //

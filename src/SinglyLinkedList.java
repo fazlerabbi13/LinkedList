@@ -32,25 +32,25 @@ public class SinglyLinkedList{
 
 //    insert anywhere in Linked list
 
-//    public void insertAtParticularIndex(int value,int index){
-//        if(index==0){
-//            insertLast(value);
-//            return;
-//        }
-//        if(index==size){
-//            insertLast(value);
-//            return;
-//        }
-//
-//        Node temp=head;
-//        for (int i = 1; i < index; i++) {
-//            temp=temp.next;
-//        }
-//
-//        Node node = new Node(value,temp.next);
-//        temp.next=node;
-//        size++;
-//    }
+    public void insertAtParticularIndex(int value,int index){
+        if(index==0){
+            insertLast(value);
+            return;
+        }
+        if(index==size){
+            insertLast(value);
+            return;
+        }
+
+        Node temp=head;
+        for (int i = 1; i < index; i++) {
+            temp=temp.next;
+        }
+
+        Node node = new Node(value,temp.next);
+        temp.next=node;
+        size++;
+    }
 
 //    insert at last
 
