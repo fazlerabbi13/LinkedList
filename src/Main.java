@@ -12,18 +12,18 @@ public class Main {
         list.insertFirst(9);
 
         list.insertLast(99);
-
-        list.insertAtParticularIndex(100,3);
-
-        System.out.println(list.deleteFirst());
-
-        list.display();
-
-        System.out.println(list.deleteLast());
-
-        list.display();
-
-        System.out.println(list.deleteAtParticularIndex(2));
+//
+//        list.insertAtParticularIndex(100,3);
+//
+//        System.out.println(list.deleteFirst());
+//
+//        list.display();
+//
+//        System.out.println(list.deleteLast());
+//
+//        list.display();
+//
+//        System.out.println(list.deleteAtParticularIndex(2));
 
         list.display();
     }
