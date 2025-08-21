@@ -1,6 +1,11 @@
 public class DoublyLL {
     private Node head;
+    private Node tail;
+    private int size;
 
+    public DoublyLL() {
+        this.size = 0;
+    }
 //    insert at first
     public void insertFirst(int value){
         Node node = new Node(value);
@@ -51,6 +56,24 @@ public class DoublyLL {
         last.next=node;
         node.previous=last;
 
+    }
+
+    public int deleteFirst() {
+        if (head == null) {
+            throw new RuntimeException("List is empty, cannot delete.");
+        }
+
+        int value = head.value;
+
+        if (head == tail) { // only one element
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.previous = null;
+        }
+
+        size--;
+        return value;
     }
 //finding node
 public Node find(int value){

@@ -37,6 +37,7 @@ public class Main {
         list.insertFirst(5);
         list.insertAtLast(99);
         list.insertAtAnywhere(3,100);
+        System.out.println(list.deleteFirst());
         list.display();
 
     }
