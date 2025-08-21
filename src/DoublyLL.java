@@ -12,6 +12,26 @@ public class DoublyLL {
         head=node;
     }
 
+//    insert at anywhere
+
+    public void insertAtAnywhere(int after,int value){
+        Node p = find(after);
+
+        if (p == null){
+            System.out.println("dose not exist");
+            return;
+        }
+        Node node = new Node(value);
+        node.next = p.next;
+        p.next = node;
+        node.previous=p;
+        if (node.next!=null){
+            node.next.previous=node;
+        }
+
+
+    }
+
 
 //    insert at last
     public void insertAtLast(int value){
@@ -32,7 +52,17 @@ public class DoublyLL {
         node.previous=last;
 
     }
-
+//finding node
+public Node find(int value){
+    Node node = head;
+    while (node != null){
+        if(node.value == value){
+            return node;
+        }
+        node = node.next;
+    }
+    return node;
+}
 // display
     public void display(){
         Node node = head;
