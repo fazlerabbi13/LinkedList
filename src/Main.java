@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        SinglyLinkedList list = new SinglyLinkedList();
+/*      SinglyLinkedList list = new SinglyLinkedList();
         list.insertFirst(3);
         list.insertFirst(4);
         list.insertFirst(5);
@@ -23,8 +23,20 @@ public class Main {
 
        list.display();
 
-      System.out.println(list.deleteAtParticularIndex(2));
+        System.out.println(list.deleteAtParticularIndex(2));
 
         list.display();
+  */
+
+
+        DoublyLL list = new DoublyLL();
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(3);
+        list.insertFirst(4);
+        list.insertFirst(5);
+
+        list.display();
+
     }
 }

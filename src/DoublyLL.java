@@ -1,5 +1,5 @@
 public class DoublyLL {
-    Node head;
+    private Node head;
 
 //    insert at first
     public void insertFirst(int value){
@@ -12,7 +12,15 @@ public class DoublyLL {
         head=node;
     }
 
-//
+// display
+    public void display(){
+        Node node = head;
+        while (node != null){
+            System.out.println(node.value + "->");
+            node=node.next;
+        }
+        System.out.println("End");
+    }
     private class Node{
         int value;
         Node next;
