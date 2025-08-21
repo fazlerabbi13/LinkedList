@@ -12,6 +12,27 @@ public class DoublyLL {
         head=node;
     }
 
+
+//    insert at last
+    public void insertAtLast(int value){
+        Node node = new Node(value);
+        Node last = head;
+        node.next = null;
+
+        if(head== null){
+            node.previous=null;
+            head=node;
+            return;
+        }
+
+        while (last.next != null){
+            last=last.next;
+        }
+        last.next=node;
+        node.previous=last;
+
+    }
+
 // display
     public void display(){
         Node node = head;
