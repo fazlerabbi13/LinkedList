@@ -19,7 +19,7 @@ public class DoublyLL {
             System.out.println(node.value + "->");
             node=node.next;
         }
-        System.out.println("End");
+        System.out.println();
     }
     private class Node{
         int value;
