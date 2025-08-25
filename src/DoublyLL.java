@@ -108,33 +108,33 @@ public int deleteLast() {
 //delete from anywhere
 
     // delete node by index (0-based index)
-//    public int deleteAtIndex(int index) {
-//        if (index < 0 || index >= size) {
-//            throw new IndexOutOfBoundsException("Invalid index");
-//        }
-//
-//        if (index == 0) {
-//            return deleteFirst();
-//        }
-//
-//        if (index == size - 1) {
-//            return deleteLast();
-//        }
-//
-//        Node current = head;
-//        for (int i = 0; i < index; i++) {
-//            current = current.next;
-//        }
-//
-//        int value = current.value;
-//
-//        // unlink current node
-//        current.previous.next = current.next;
-//        current.next.previous = current.previous;
-//
-//        size--;
-//        return value;
-//    }
+    public int deleteAtIndex(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
+
+        if (index == 0) {
+            return deleteFirst();
+        }
+
+        if (index == size - 1) {
+            return deleteLast();
+        }
+
+        Node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+
+        int value = current.value;
+
+        // unlink current node
+        current.previous.next = current.next;
+        current.next.previous = current.previous;
+
+        size--;
+        return value;
+    }
 
     //finding node
 public Node find(int value){
