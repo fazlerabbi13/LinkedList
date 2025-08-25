@@ -40,5 +40,12 @@ public class Main {
         System.out.println(list.deleteFirst());
         list.display();
 
+//        System.out.println(list.deleteLast());
+
+//        list.display();
+
+//        System.out.println(list.deleteAtIndex(2));
+//
+//        list.display();
     }
 }
